@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-3 20:31:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Zip" table="ZIP">
+        <id name="zip_id" type="int">
+            <column name="ZIP_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="zip_name" type="java.lang.String">
+            <column name="ZIP_NAME" />
+        </property>
+        <property name="zip_url" type="java.lang.String">
+            <column name="ZIP_URL" />
+        </property>
+        <property name="upload_time" type="java.sql.Timestamp">
+            <column name="upload_time" />
+        </property>
+        <property name="old_zip_name" type="java.lang.String">
+            <column name="old_zip_name" />
+        </property>
+        <property name="isZip" type="int">
+            <column name="isZip" />
+        </property>
+        <property name="isClassify" type="int">
+            <column name="isClassify" />
+        </property>
+        <property name="unzip_time" type="java.sql.Timestamp">
+            <column name="unzip_time" />
+        </property>
+    </class>
+</hibernate-mapping>

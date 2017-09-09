@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A3036</color>
+    <color name="colorTheme">#01B090</color>
+    <color name="colorTheme2">#3C434C</color>
+    <color name="colorThemeDeeper">#029378</color>
+    <color name="colorButtonUnEnable">#515b59</color>
+    <color name="colorWhite">#f7fafc</color>
+    <color name="colorTextPressed">#d6d9d5</color>
+    <color name="colorTextHint">#8c9093</color>
+    <color name="colorDivider">#bec0c1</color>
+    <color name="colorBg">#e6e8e9</color>
+    <color name="colorBlack">#2b2a2a</color>
+    <color name="colorYellow">#F4EA2A</color>
+</resources>

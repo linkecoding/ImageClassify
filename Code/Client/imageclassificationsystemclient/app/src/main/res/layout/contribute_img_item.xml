@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/id_image_upload_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="2"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableLeft="@drawable/ic_zip_file"/>
+
+    <TextView
+        android:id="@+id/id_image_upload_review_status_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"/>
+</LinearLayout>

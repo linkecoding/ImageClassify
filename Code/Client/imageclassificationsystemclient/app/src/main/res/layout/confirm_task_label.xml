@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_label_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="6"
+        android:lines="1"
+        android:gravity="center_horizontal"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/label_choose_selected_shape"
+        android:textSize="13sp"/>

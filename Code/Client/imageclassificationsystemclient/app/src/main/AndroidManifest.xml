@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.codekong.imageclassificationsystemclient">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionTheme">
+        <activity
+            android:name=".activity.LoginRegisterActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.ResetPasswordActivity"/>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ChooseInterestedCategoryActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.TagImageActivity"/>
+        <!-- <activity android:name=".activity.TestActivity" /> -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.CheckinActivity"/>
+        <activity android:name=".activity.SettingsActivity"/>
+        <activity android:name=".activity.ModifyUserInfoActivity"/>
+        <activity android:name=".activity.ModifyPasswordActivity"/>
+        <activity android:name=".activity.UserInfoActivity"/>
+        <activity android:name=".activity.ShowFinishedTaskDetailActivity"/>
+        <activity android:name=".activity.ExperienceRoomActivity">
+        </activity>
+        <activity android:name=".activity.ContributeImgActivity">
+        </activity>
+    </application>
+
+</manifest>

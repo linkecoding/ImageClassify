@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBg">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/top_show_text_height"
+            android:text="@string/str_tag_image_result"
+            android:padding="@dimen/label_text_padding"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/id_tag_finish_progress_textview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/top_show_text_height"
+            android:padding="@dimen/label_text_padding"
+            android:gravity="end"
+            android:text="@string/str_tag_finish_percent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/id_tag_result_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="5"
+        android:gravity="center_horizontal"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="@dimen/label_spacing_size"
+        android:verticalSpacing="@dimen/label_spacing_size"
+        android:layout_margin="@dimen/label_spacing_size">
+    </GridView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_task_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:clickable="true"
+    android:background="@drawable/text_item_bg_selector">
+    <cn.yiiguxing.compositionavatar.CompositionAvatarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_task_images_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:fitType="CENTER"
+        app:gap="0.05"
+        android:background="@drawable/text_item_bg_selector"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/id_task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_toEndOf="@id/id_task_images_icon"
+        android:text="2017-6-15 13:12"
+        android:layout_centerVertical="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/id_task_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:text="任务量 10"
+        android:textColor="@color/colorTextHint"
+        android:layout_centerVertical="true"
+        android:textSize="14dp" />
+</RelativeLayout>

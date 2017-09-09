@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/id_tag_result_tv"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:textColor="@color/colorBlack"
+      android:background="@drawable/circle_unselected_shape"
+      android:clickable="true">
+</TextView>

@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">图片认知</string>
+    <string name="str_confirm">确认</string>
+    <!--登录注册界面-->
+    <string name="str_login_register_phone_login">手机登录</string>
+    <string name="str_login_register_register">注册</string>
+    <string name="str_input_username">请输入手机号</string>
+    <string name="str_input_password">请输入密码</string>
+
+    <!--登录界面-->
+    <string name="str_login_user_login">用户登录</string>
+    <string name="str_login">登录</string>
+    <string name="str_login_forget_password">忘记密码？</string>
+
+    <!--注册界面-->
+    <string name="str_register_input_confirm_password">请输入确认密码</string>
+    <string name="str_register_get_identify_code">获取验证码</string>
+    <string name="str_register_identify_code">验证码</string>
+    <string name="str_register_input_username">请输入用户名</string>
+
+    <!--主界面-->
+    <string name="str_tab_home">主页</string>
+    <string name="str_tab_task">任务</string>
+    <string name="str_tab_rank">排行榜</string>
+    <string name="str_tab_me">我的</string>
+
+    <!--主页-->
+    <string name="str_times_10">10张</string>
+    <string name="str_times_20">20张</string>
+    <string name="str_times_30">30张</string>
+    <string name="str_select_picture_num">请选择任务图片数量</string>
+    <string name="str_start_task">开始任务</string>
+    <string name="str_yesterday_task_num">昨日任务</string>
+    <string name="str_today_task_num">今日任务</string>
+    <string name="str_unfinished_task_num">未完成任务</string>
+    <string name="str_attendance">打卡</string>
+    <string name="str_look_checkin_record">查看打卡记录</string>
+
+    <!--我的界面-->
+    <string name="str_integral">积分</string>
+    <string name="str_task_num">任务量</string>
+    <string name="str_percent_of_accuracy">准确度</string>
+    <string name="str_user_interest">我的兴趣</string>
+    <string name="str_user_checkin_record">打卡记录</string>
+    <string name="str_settings">设置</string>
+    <string name="str_user_info">个人信息</string>
+
+    <string name="str_home">主页</string>
+    <string name="str_register">注册</string>
+
+    <!--设置界面-->
+    <string name="str_modify_user_info">修改个人信息</string>
+    <string name="str_modify_user_password">修改密码</string>
+    <string name="str_exit_login">退出登录</string>
+
+    <!--修改个人信息界面-->
+    <string name="str_modify_avatar">头像</string>
+    <string name="str_username">用户名</string>
+    <string name="str_sex">性别</string>
+
+    <!--注册登录相关-->
+    <string name="str_phone_num_cannot_empty">手机号不能为空</string>
+    <string name="str_username_cannot_empty">用户名不能为空</string>
+    <string name="str_verify_code_cannot_empty">验证码不能为空</string>
+    <string name="str_password_cannot_empty">密码不能为空</string>
+    <string name="str_phone_num_isused">手机号码已经被注册</string>
+    <string name="str_verify_code_send_success">验证码发送成功</string>
+    <string name="str_verify_is_wrong">验证码错误,请重新填写</string>
+    <string name="str_reset_password">重置密码</string>
+    <string name="str_phone_num_isnot_exist">手机号不存在</string>
+    <string name="str_iterested_category">感兴趣的分类</string>
+    <string name="str_sure">确定</string>
+    <string name="str_getcategory_list_error">获取兴趣列表失败</string>
+    <string name="str_choose_interested_category">选择感兴趣的分类</string>
+    <string name="str_login_status_error">登录状态错误</string>
+    <string name="str_tag_image">打标签</string>
+    <string name="str_current_progress">当前任务进度</string>
+    <string name="str_previous_ques">上一题</string>
+    <string name="str_next_ques">下一题</string>
+    <!--注册登录相关-->
+
+    <!--请求状态相关-->
+    <string name="str_network_error">网络存在问题~</string>
+    <string name="str_unknown_error">未知错误~</string>
+    <string name="str_tag_progress_format" formatted="false">%d/%d</string>
+    <string name="str_option_tag">备选标签</string>
+    <string name="str_me_input_tag">我的标签(长按删除)</string>
+    <string name="str_only_add_four_tag">只能添加4个标签</string>
+    <string name="str_please_input_your_tag">请输入你的标签</string>
+    <string name="str_no">无</string>
+    <string name="str_tag_image_result">打标签结果</string>
+    <string name="str_tag_finish_percent" formatted="false">已打标签(%d/%d)</string>
+    <!--请求状态相关-->
+
+    <!--修改密码界面-->
+    <string name="str_input_old_password">请输入旧密码</string>
+    <string name="str_input_new_password">请输入新密码</string>
+    <string name="str_sex_male">男</string>
+    <string name="str_sex_female">女</string>
+    <string name="str_take_camera">拍照</string>
+    <string name="str_select_from_photo_album">从手机相册选择</string>
+    <string name="str_server_error">服务器错误</string>
+    <string name="str_donot_add_duplicate_tag">不可添加重复的标签</string>
+    <string name="str_submit_result">提交结果</string>
+    <string name="str_task_unfinisheda">未完成</string>
+    <string name="str_task_wait_to_cnfirm">待判定</string>
+    <string name="str_task_finished">已完成</string>
+    <string name="str_tasking_exit_prompt">任务还未提交,你确定要退出吗?</string>
+    <string name="str_prompt">提示</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_skip">跳过</string>
+    <string name="str_pick_out_sure">我选好了</string>
+    <string name="str_select_at_least_one_item">请至少选择一项兴趣或者选择跳过</string>
+    <string name="str_checkin_record">打卡记录</string>
+
+    <string name="str_task_detail">任务详情</string>
+    <string name="str_task_amount" formatted="false">任务量%s</string>
+
+    <!--任务详情相关-->
+    <string name="str_unconfirm_label">未接收标签</string>
+    <string name="str_confirm_label">已接受标签</string>
+    <string name="str_exoerience_room">体验室</string>
+    <string name="str_identify_img_from_album">识别相册图片</string>
+    <string name="str_identify_from_camera_realtime">摄像头实时识别</string>
+    <string name="str_model_file_not_exist">图片识别模型文件不存在,请获取后再体验该功能</string>
+    <string name="str_download_model_file">获取模型文件</string>
+    <string name="str_download">下载</string>
+    <string name="str_download_file_failed">下载失败,请检查网络连接</string>
+    <string name="str_download_over">下载完成, 正在解压…</string>
+    <string name="str_update_model_file">更新模型</string>
+    <string name="str_toast_update_model_file">点击右上角的更新模型，您将获得最新的训练模型，体验更准确的图片识别功能</string>
+    <string name="str_downloading">正在获取…</string>
+    <string name="str_unziping">正在解压…</string>
+    <string name="str_unzip_success">解压完成</string>
+    <string name="str_unzip_failed">解压失败</string>
+    <string name="str_experience_room">体验室</string>
+    <string name="str_rank_by_integral">按积分排名</string>
+    <string name="str_rank_by_accuracy">按准确率排名</string>
+    <string name="str_rank_by_taskamount">按任务量排名</string>
+    <string name="str_share_rank">分享排行榜</string>
+    <string name="str_accuracy">准确率</string>
+    <string name="str_contribute_img_list">贡献图片列表</string>
+    <string name="str_contribute_img">贡献图片</string>
+    <string name="str_review_pass">审核通过</string>
+    <string name="str_review_not_pass">审核不通过</string>
+    <string name="str_waiting_to_review">等待审核</string>
+    <string name="str_dealwith_upload_img">处理上传图片中...</string>
+    <string name="str_upload_success">上传成功</string>
+    <string name="str_uploading">正在上传</string>
+
+</resources>

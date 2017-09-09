@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-6 16:51:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Task" table="TASK">
+        <id name="task_id" type="int">
+            <column name="TASK_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="task_img_amount" type="int">
+            <column name="TASK_IMG_AMOUNT" />
+        </property>
+        <property name="task_start_time" type="java.sql.Timestamp">
+            <column name="TASK_START_TIME" />
+        </property>
+        <property name="task_iscommit" type="int">
+            <column name="TASK_ISCOMMIT" />
+        </property>
+        <property name="user_id" type="int">
+            <column name="USER_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

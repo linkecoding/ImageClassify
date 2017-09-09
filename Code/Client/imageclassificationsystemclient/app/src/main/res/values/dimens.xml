@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="hint_text_size">15sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="toast_text_size">12sp</dimen>
+    <dimen name="login_title_size">35sp</dimen>
+    <dimen name="text_margin_size">16dp</dimen>
+    <dimen name="tab_text_size">12sp</dimen>
+    <dimen name="toolbar_height_size">50dp</dimen>
+    <dimen name="button_margin_size">50dp</dimen>
+    <dimen name="title_size">17sp</dimen>
+    <dimen name="small_title_size">13sp</dimen>
+    <dimen name="dividing_line_margin_lr">15dp</dimen>
+    <dimen name="dividing_line_margin_top">10dp</dimen>
+    <dimen name="label_textview_width">40dp</dimen>
+    <dimen name="label_textview_height">15dp</dimen>
+    <dimen name="label_spacing_size">10dp</dimen>
+    <dimen name="button_margin_lr">15dp</dimen>
+    <dimen name="image_size">240dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="top_show_text_height">30dp</dimen>
+    <dimen name="label_text_padding">7dp</dimen>
+</resources>

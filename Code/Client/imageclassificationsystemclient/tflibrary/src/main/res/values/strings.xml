@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TFLibrary</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="str_choose_img_from_album">从相册选择图片</string>
+    <string name="str_classifing_img">待识别图片</string>
+    <string name="str_image_recognition">图片识别</string>
+</resources>

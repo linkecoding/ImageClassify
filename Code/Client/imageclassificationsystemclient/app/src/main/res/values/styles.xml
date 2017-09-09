@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="NoActionTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorTheme2</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorTheme</item>
+        <item name="android:textColorPrimary">@color/colorTheme</item>
+        <item name="actionMenuTextColor">@color/colorTheme</item>
+        <!--新增一个item，用于控制menu-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextHint</item>
+    </style>
+    
+    <style name="ListViewStyle" parent="Base.Widget.AppCompat.ListView">
+        <item name="android:itemTextAppearance">@style/ListItem_TextAppearanceStyle</item>
+    </style>
+
+    <style name="ListItem_TextAppearanceStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!--设置菜单显示位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+</resources>

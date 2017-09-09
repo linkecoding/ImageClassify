@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-7 17:16:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Oauth" table="OAUTH">
+        <id name="oauth_id" type="int">
+            <column name="OAUTH_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="oauth_token" type="java.lang.String">
+            <column name="OAUTH_TOKEN" />
+        </property>
+        <property name="oauth_token_expiration" type="java.sql.Timestamp">
+            <column name="OAUTH_TOKEN_EXPIRATION" />
+        </property>
+        <many-to-one name="user" class="cn.codekong.bean.User" unique="true" lazy="false" fetch="join">
+           <column name="user_id"></column>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

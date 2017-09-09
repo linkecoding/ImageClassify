@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation=" 
+              					   http://www.springframework.org/schema/beans  
+                                   http://www.springframework.org/schema/beans/spring-beans.xsd  
+                                   http://www.springframework.org/schema/aop  
+                                   http://www.springframework.org/schema/aop/spring-aop.xsd
+                                   http://www.springframework.org/schema/context
+                                   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                                   http://www.springframework.org/schema/mvc 
+                                   http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+                                   http://www.springframework.org/schema/task   
+								   http://www.springframework.org/schema/task/spring-task.xsd ">
+
+	<!-- 打开Spring的Annotation支持 -->
+	<context:annotation-config />
+
+	<!-- task任务扫描注解 -->
+	<task:annotation-driven />
+
+	<context:component-scan base-package="cn.codekong.task"></context:component-scan>
+
+	<!-- 设定Spring 去哪些包中找Annotation -->
+	<!-- 指定注入Bean时Spring要查找的包 -->
+	<context:component-scan base-package="cn.codekong.controller" />
+	<context:component-scan base-package="cn.codekong.service" />
+
+	<bean id="userService" class="cn.codekong.service.UserService">
+
+	</bean>
+	<bean id="oauthService" class="cn.codekong.service.OauthService">
+
+	</bean>
+	<bean id="checkInService" class="cn.codekong.service.CheckInService">
+
+	</bean>
+	<bean id="adminService" class="cn.codekong.service.AdminService">
+	</bean>
+	<bean id="categoryService" class="cn.codekong.service.CategoryService">
+	</bean>
+	<bean id="interestService" class="cn.codekong.service.InterestService">
+	</bean>
+	<bean id="imageService" class="cn.codekong.service.ImageService">
+	</bean>
+	<bean id="zipService" class="cn.codekong.service.ZipService">
+	</bean>
+	<bean id="markService" class="cn.codekong.service.MarkService">
+	</bean>
+	<bean id="taskService" class="cn.codekong.service.TaskService">
+	</bean>
+	<bean id="compositionService" class="cn.codekong.service.CompositionService">
+	</bean>
+	<bean id="exportService" class="cn.codekong.service.ExportService">
+	</bean>
+	<bean id="constantService" class="cn.codekong.service.ConstantService">
+	</bean>
+	<bean id="contributeService" class="cn.codekong.service.ContributeService">
+	</bean>
+
+	<!-- 配置视图解析器，使用InternalResourceViewResolver类作为视图解析器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 指定目录前缀 -->
+		<property name="prefix">
+			<value>/admin/</value>
+		</property>
+		<!-- 指定后缀 -->
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	<!-- <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> 
+		<property name="messageConverters"> <list> 下载的时候专用 <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" 
+		/> <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"> 
+		<property name="supportedMediaTypes"> <list> <value>text/plain;charset=UTF-8</value> 
+		</list> </property> </bean> </list> </property> </bean> -->
+	<!-- 配置springMVC处理上传文件的信息,自定义上传,带进度条 <bean id="multipartResolver" class="cn.codekong.listener.CustomMultipartResolver"> 
+		<property name="defaultEncoding" value="utf-8" /> </bean> -->
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="1048576000"></property>
+		<property name="defaultEncoding" value="utf-8"></property>
+	</bean>
+
+
+	<!-- 拦截器 -->
+	<!-- 可以同时使用多个拦截器，在这里引入拦截器 JAVA文件 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/user/modifypwd" />
+			<mvc:mapping path="/user/modifyinfo" />
+			<mvc:mapping path="/user/getinfo" />
+			<mvc:mapping path="/user/checkin" />
+			<mvc:mapping path="/user/getcheckinlist" />
+			<mvc:mapping path="/user/modifyhobby" />
+			<mvc:mapping path="/user/gethobbylist" />
+			<mvc:mapping path="/user/getcategoryhobbylist" />
+			
+			<mvc:mapping path="/rank/getranking" />
+			
+			<mvc:mapping path="/task/gettask" />
+			<mvc:mapping path="/task/committask" />
+			<mvc:mapping path="/task/getunfinishedtask" />			
+			<mvc:mapping path="/task/getunconfirmedtask" />
+			<mvc:mapping path="/task/getfinishedtask" />
+			<mvc:mapping path="/task/gettaskbyid" />
+			<mvc:mapping path="/task/getfinishedtaskdetail" />
+			<mvc:mapping path="/task/gethometaskstatusdetail" />
+			<bean class="cn.codekong.interceptor.UserInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/getzipbycategory" />
+			<mvc:mapping path="/admin/getuserinfo" />
+			<mvc:mapping path="/admin/modifyuserinfo" />
+			<mvc:mapping path="/admin/modifyadminpassword" />
+			<mvc:mapping path="/admin/allusers" />
+			<mvc:mapping path="/admin/frozenuser" />
+			<mvc:mapping path="/admin/unfrozenuser" />
+			<mvc:mapping path="/admin/unfrozenuserlist" />
+			<mvc:mapping path="/admin/frozenuserlist" />
+			<mvc:mapping path="/admin/addcategory" />
+			<mvc:mapping path="/admin/getallcategory" />
+			<mvc:mapping path="/admin/exportresultlist" />
+			<mvc:mapping path="/admin/exportresultlistamount" />
+			<mvc:mapping path="/admin/exporthistorylistresult" />
+			<mvc:mapping path="/admin/exportresult" />
+			<mvc:mapping path="/admin/getdownloadimageshistory" />
+			<mvc:mapping path="/admin/getimgamountdata" />
+			<mvc:mapping path="/admin/getalltaskfinished" />
+			<mvc:mapping path="/admin/getallusersex" />
+			<mvc:mapping path="/admin/modifyconfiginfos" />
+			<mvc:mapping path="/admin/getsproconfig" />
+			<mvc:mapping path="/admin/exportorpreviewhistorylistresult" />
+			<bean class="cn.codekong.interceptor.AdminInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-12 16:09:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.CheckIn" table="CHECKIN">
+        <id name="checkin_id" type="int">
+            <column name="CHECKIN_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="checkin_time" type="java.sql.Timestamp">
+            <column name="CHECKIN_TIME" />
+        </property>
+          <property name="user_id" type="int">
+            <column name="user_id" />
+        </property> 
+    </class>
+</hibernate-mapping>

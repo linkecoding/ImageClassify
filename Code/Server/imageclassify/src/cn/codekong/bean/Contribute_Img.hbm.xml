@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-25 15:03:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Contribute_Img" table="CONTRIBUTE_IMG">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="upload_img_time" type="java.sql.Timestamp">
+            <column name="UPLOAD_IMG_TIME" />
+        </property>
+        <property name="storage_path" type="java.lang.String">
+            <column name="STORAGE_PATH" />
+        </property>
+        <property name="upload_img_review_status" type="java.lang.String">
+            <column name="UPLOAD_IMG_REVIEW_STATUS" />
+        </property>
+        <property name="user_id" type="int">
+            <column name="USER_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

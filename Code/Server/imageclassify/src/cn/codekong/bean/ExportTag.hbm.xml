@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-24 20:49:21 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.ExportTag" table="export_tag">
+        <id name="img_id" type="int">
+            <column name="IMG_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="export_id" type="int">
+            <column name="EXPORT_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

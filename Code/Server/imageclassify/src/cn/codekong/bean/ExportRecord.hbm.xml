@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-24 20:27:13 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.ExportRecord" table="export_record">
+        <id name="export_id" type="int">
+            <column name="EXPORT_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="export_time" type="java.sql.Timestamp">
+            <column name="EXPORT_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

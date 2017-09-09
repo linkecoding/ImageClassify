@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-22 16:41:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Admin" table="ADMIN">
+        <id name="admin_id" type="int">
+            <column name="ADMIN_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="admin_name" type="java.lang.String">
+            <column name="ADMIN_NAME" />
+        </property>
+        <property name="admin_password" type="java.lang.String">
+            <column name="ADMIN_PASSWORD" />
+        </property>
+        <property name="admin_token" type="java.lang.String">
+            <column name="admin_token" />
+        </property>
+    </class>
+</hibernate-mapping>

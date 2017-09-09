@@ -1,0 +1,13 @@
+<com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_pull_to_refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+   <ListView
+       android:id="@+id/id_unfinished_task_list_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>

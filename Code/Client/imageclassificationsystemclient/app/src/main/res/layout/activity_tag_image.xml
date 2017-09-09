@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.codekong.imageclassificationsystemclient.activity.TagImageActivity">
+
+    <ViewFlipper
+        android:id="@+id/id_task_viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/id_prev_next_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:background="@color/colorButtonUnEnable">
+        <TextView
+            android:id="@+id/id_prev_img_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edittext_height"
+            android:text="@string/str_no"
+            android:textColor="@color/colorTheme"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/id_next_img_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edittext_height"
+            android:text="@string/str_next_ques"
+            android:textColor="@color/colorTheme"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/id_submit_tag_result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:textColor="@color/colorTheme"
+        android:gravity="center"
+        android:background="@color/colorButtonUnEnable"
+        android:text="@string/str_submit_result"
+        android:visibility="gone"/>
+</LinearLayout>

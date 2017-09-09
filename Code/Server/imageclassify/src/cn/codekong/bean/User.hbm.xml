@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-7 15:36:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.User" table="USER">
+        <id name="user_id" type="int">
+            <column name="USER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="sex" type="java.lang.String">
+            <column name="SEX" />
+        </property>
+        <property name="tel_num" type="java.lang.String">
+            <column name="TEL_NUM" />
+        </property>
+        <property name="integral" type="int">
+            <column name="INTEGRAL" />
+        </property>
+        <property name="avatar_url" type="java.lang.String">
+            <column name="AVATAR_URL" />
+        </property>
+        <property name="accuracy" type="java.lang.String">
+            <column name="ACCURACY" />
+        </property> 
+         <property name="is_frozen" type="int">
+            <column name="is_frozen" />
+        </property>  
+        <!-- lazy="false" fetch="join 
+         <set name="categories" table="interest" cascade="delete">
+           <key>
+             <column name="user_id"></column>
+           </key>
+           <many-to-many class="cn.codekong.bean.Category" column="category_id"></many-to-many>
+        </set>-->
+    </class>
+</hibernate-mapping>

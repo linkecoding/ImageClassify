@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-7 22:22:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Composition" table="COMPOSITION">
+        <id name="img_id" type="int">
+            <column name="IMG_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="is_masked" type="int">
+            <column name="IS_MASKED" />
+        </property>
+        <property name="task_id" type="int">
+            <column name="TASK_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

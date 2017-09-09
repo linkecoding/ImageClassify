@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_tag_label_name_tv"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:textColor="@color/colorTheme"
+    android:background="@drawable/circle_corner_rectangle_unselected_shape"
+    android:clickable="true">
+
+</TextView>

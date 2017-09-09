@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-22 14:59:26 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Category" table="CATEGORY">
+        <id name="category_id" type="int">
+            <column name="CATEGORY_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="category_name" type="java.lang.String">
+            <column name="CATEGORY_NAME" />
+        </property> 
+        
+           <!--  <set name="images" table="image_category" inverse ="false" lazy ="true">
+           <key>
+             <column name="category_id"></column>
+           </key>
+           <many-to-many class="cn.codekong.bean.Image" column="img_id"></many-to-many>
+        </set> -->
+    </class>
+</hibernate-mapping>

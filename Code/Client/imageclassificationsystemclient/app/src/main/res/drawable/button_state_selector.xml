@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按钮没有被按下是的状态-->
+    <item android:state_pressed="false"
+        android:drawable="@drawable/button_unactive_shape"/>
+    <!--按钮被按下是的状态-->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/button_pressed_shape" />
+</selector>

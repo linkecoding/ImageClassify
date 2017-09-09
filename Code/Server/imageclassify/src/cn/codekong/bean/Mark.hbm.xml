@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-6 16:02:04 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Mark" table="MARK">
+        <id name="img_id" type="int">
+            <column name="IMG_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="mark_time" type="java.sql.Timestamp">
+            <column name="MARK_TIME" />
+        </property>
+        <property name="option_mark_name" type="java.lang.String">
+            <column name="OPTION_MARK_NAME" />
+        </property>
+        <property name="manual_mark_name" type="java.lang.String">
+            <column name="MANUAL_MARK_NAME" />
+        </property>
+        <property name="user_id" type="int">
+            <column name="USER_ID" />
+        </property>
+        <property name="mark_accuracy" type="java.lang.String">
+            <column name="mark_accuracy" />
+        </property> 
+    </class>
+</hibernate-mapping>

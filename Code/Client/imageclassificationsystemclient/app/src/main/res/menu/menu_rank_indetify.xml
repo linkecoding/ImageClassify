@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_rank_by_integral_menu"
+        android:title="@string/str_rank_by_integral"/>
+
+    <item
+        android:id="@+id/id_rank_by_accuracy_menu"
+        android:title="@string/str_rank_by_accuracy"/>
+    <item
+        android:id="@+id/id_rank_by_taskamount_menu"
+        android:title="@string/str_rank_by_taskamount"/>
+
+    <item
+        android:id="@+id/id_share_rank_menu"
+        android:title="@string/str_share_rank"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <cn.codekong.imageclassificationsystemclient.customizeview.NoScrollViewPager
+    android:id="@+id/id_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    </cn.codekong.imageclassificationsystemclient.customizeview.NoScrollViewPager>
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDivider"/>
+    <include layout="@layout/bottom_tab" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-29 10:20:51 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.codekong.bean.Image" table="IMAGE">
+        <id name="img_id" type="int" access="field">
+            <column name="IMG_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="img_name" type="java.lang.String" access="field">
+            <column name="IMG_NAME" />
+        </property>
+        <property name="img_path" type="java.lang.String" access="field">
+            <column name="IMG_PATH" />
+        </property>
+        <property name="img_finish_time" type="java.sql.Timestamp" access="field">
+            <column name="IMG_FINISH_TIME" />
+        </property>
+        <property name="img_label_name" type="java.lang.String" access="field">
+            <column name="IMG_LABEL_NAME" />
+        </property>
+        <property name="img_is_finish" type="java.lang.String" access="field">
+            <column name="IMG_IS_FINISH" />
+        </property> 
+        <property name="img_machine_tag_label" type="java.lang.String" access="field">
+            <column name="img_machine_tag_label" />
+        </property>
+        <property name="is_clustered" type="int" access="field">
+            <column name="is_clustered" />
+        </property>
+        <property name="is_export" type="int" access="field">
+            <column name="is_export" />
+        </property>
+        
+        <many-to-one name="zip" class="cn.codekong.bean.Zip" fetch="join">
+            <column name="zip_id"></column>
+        </many-to-one>
+        <!--
+          <set name="categories" table="image_category">
+           <key>
+             <column name="img_id"></column>
+           </key>
+           <many-to-many class="cn.codekong.bean.Category" column="category_id"></many-to-many>
+        </set>-->
+    </class>
+</hibernate-mapping>

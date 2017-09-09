@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="@dimen/dividing_line_margin_top"
+        android:textSize="@dimen/hint_text_size"
+        android:text="@string/str_choose_interested_category" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/dividing_line_margin_top"
+        android:layout_marginLeft="@dimen/dividing_line_margin_top"
+        android:background="@color/colorDivider"
+        android:layout_height="0.5dp" />
+    <GridView
+        android:id="@+id/id_category_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="@dimen/label_spacing_size"
+        android:verticalSpacing="@dimen/label_spacing_size"
+        android:layout_margin="@dimen/label_spacing_size"
+        android:numColumns="4">
+    </GridView>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/id_submit_interested_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/button_text_size"
+            android:gravity="center"
+            android:textColor="@color/colorTheme"
+            android:text="@string/str_pick_out_sure"
+            android:background="@color/colorButtonUnEnable"/>
+    </FrameLayout>
+</LinearLayout>
